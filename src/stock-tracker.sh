@@ -5,27 +5,52 @@ if [ "$DAY" -ge 6 ]; then
     exit 0
 fi
 
-URL='https://www.klsescreener.com/v2/markets'
-ALLSTOCKS_FILE="src/stocks.txt"
-MARKETS_FILE="src/markets.txt"
-PRICES_FILE="src/prices.txt"
+function scrape_website {
+    URL='https://www.klsescreener.com/v2/markets'
+    ALLSTOCKS_FILE="src/stocks.txt"
+    MARKETS_FILE="src/markets.txt"
+    PRICES_FILE="src/prices.txt"
 
-MAX_ATTEMPTS=10
-attempts=0
-success=0
+    MAX_ATTEMPTS=10
+    attempts=0
+    success=0
 
-while [ $success -ne 1 ] && [ $attempts -ne $MAX_ATTEMPTS ]; do
-    curl -o "$ALLSTOCKS_FILE" "$URL"
-    grep -oE '<a href="/v2/markets/intraday/[^"]+">[^"]+</a>' src/stocks.txt > "$MARKETS_FILE"
-    grep -oE 'class="col-md-4" data-code="[^"]+" data-ref-price="[^"]+" data-price="[^"]+"' src/stocks.txt > "$PRICES_FILE"
+    while [ $success -ne 1 ] && [ $attempts -ne $MAX_ATTEMPTS ]; do
+        curl -o "$ALLSTOCKS_FILE" "$URL"
+        grep -oE '<a href="/v2/markets/intraday/[^"]+">[^"]+</a>' src/stocks.txt > "$MARKETS_FILE"
+        grep -oE 'class="col-md-4" data-code="[^"]+" data-ref-price="[^"]+" data-price="[^"]+"' src/stocks.txt > "$PRICES_FILE"
 
-    if [ -f "$ALLSTOCKS_FILE" ] && [ -f "$MARKETS_FILE" ] && [ -f "$PRICES_FILE" ]; then
-        success=1
-        break
+        if [ -f "$ALLSTOCKS_FILE" ] && [ -f "$MARKETS_FILE" ] && [ -f "$PRICES_FILE" ]; then
+            success=1
+            break
+        fi
+        attempts=$((attempts+1))
+    done
+
+    if [ $success -ne 1 ]; then
+        return 1
     fi
-    attempts=$((attempts+1))
-    echo "ERROR: SCRAPING FAILED"
-done
+    return 0
+}
+
+function clean_data {
+    NUM_MARKETS=$(wc -l < "$MARKETS_FILE")
+    head -n "$NUM_MARKETS" "$PRICES_FILE" > "${PRICES_FILE}.tmp"
+    mv "${PRICES_FILE}.tmp" "$PRICES_FILE"
+
+    paste "$MARKETS_FILE" "$PRICES_FILE" | while IFS=$'\t' read -r market_line price_line; do
+        market_name=$(echo "$market_line" | sed -E 's/.*>(.*)<.*/\1/')
+        price=$(echo "$price_line" | sed -E 's/.*data-price="([^"]+)".*/\1/')
+        echo "$market_name, $price"
+    done > src/cleaned_data.csv
+}
+
+if scrape_website; then
+    clean_data
+else
+    echo "(ERROR) Failed to scrape website."
+    exit 1
+fi
 
 #class="col-md-4" data-code="200" data-ref-price="1617.46" data-price="1604.47"
 #<a href="/v2/markets/intraday/KLSE">FTSE Bursa Malaysia KLCI</a>
