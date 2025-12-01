@@ -1,0 +1,44 @@
+FTSE Bursa Malaysia KLCI
+STI
+HANG SENG INDEX
+KOSPI Composite Index
+NIKKEI 225
+SET Index
+PSEi INDEX
+FTSE China A50
+SSE Composite Index
+SZSE COMP SUB INDEX
+S&P/ASX 200
+Composite Index
+NZX 50 INDEX GROS
+TSEC weighted index
+MOEX Russia Index
+FTSE 100
+DAX
+NIFTY 50
+S&P BSE SENSEX
+Dow Jones
+NYSE COMPOSITE INDEX
+S&P 500
+NASDAQ Composite
+S&P/TSX Composite index
+IBOVESPA
+Crude Palm Oil
+Brent Oil
+Crude Oil
+Gold
+Silver
+SGD/MYR
+USD/MYR
+CNY/MYR
+GBP/MYR
+HKD/MYR
+100 TWD/MYR
+100 JPY/MYR
+NZD/MYR
+AUD/MYR
+EUR/MYR
+CAD/MYR
+CHF/MYR
+Bitcoin USD
+Ethereum USD
