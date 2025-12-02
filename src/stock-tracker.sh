@@ -41,7 +41,7 @@ function match_data {
     head -n "$NUM_MARKETS" "$PRICES_FILE" > "${PRICES_FILE}.tmp"
     mv "${PRICES_FILE}.tmp" "$PRICES_FILE"
 
-    paste -d "," "$MARKETS_FILE" "$PRICES_FILE" | grep -f "$MARKETS_FILE" textfiles/filter.txt > "$NEW_FILE"
+    paste -d "," "$MARKETS_FILE" "$PRICES_FILE" | grep -Ff textfiles/filter.txt > "$NEW_FILE"
 }
 
 if scrape_website; then
