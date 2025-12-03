@@ -62,7 +62,8 @@ function format_data {
     paste -d "," "$MARKETS_FILE" "$PRICES_FILE" "$TIME_TEMP" > "$NEW_FILE"
     rm "$TIME_TEMP"
 
-    awk -F, 'NR==FNR { market[$2]=$1; next } ($1 in market) { $1 = market[$1]; print }' \
+    awk -F, \
+    'NR==FNR{ market[$2]=$1; next } ($1 in market){ $1 = market[$1]; print }' \
     OFS=, textfiles/marketIDs.csv "$NEW_FILE" > "$NEW_FILE.tmp"
     mv "$NEW_FILE.tmp" "$NEW_FILE"
 }

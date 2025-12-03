@@ -849,7 +849,7 @@
 
                         </div>
                     </div>
-                                    <div class="col-md-4" data-code="^DJI" data-ref-price="47474.46266" data-price="47761.74" data-decimal="2" data-decimal-pc="3">
+                                    <div class="col-md-4" data-code="^DJI" data-ref-price="47474.46016" data-price="47783.8" data-decimal="2" data-decimal-pc="3">
                         <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
                             <div class="col-sm-7">
                                 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/DJI">Dow Jones</a></span></div>
@@ -857,15 +857,15 @@
                             </div>
 
                             <div class="col-sm-5 text-right">
-                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">47,761.74</span></div>
+                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">47,783.80</span></div>
                                                                     <div class="price_change">
-                                        <span data-value="price_change">+287.277 +0.605%</span>
+                                        <span data-value="price_change">+309.340 +0.652%</span>
                                     </div>
                                                             </div>
 
                         </div>
                     </div>
-                                    <div class="col-md-4" data-code="^NYA" data-ref-price="21650.48475" data-price="21742.016" data-decimal="2" data-decimal-pc="3">
+                                    <div class="col-md-4" data-code="^NYA" data-ref-price="21650.4848" data-price="21749.268" data-decimal="2" data-decimal-pc="3">
                         <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
                             <div class="col-sm-7">
                                 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/NYA">NYSE COMPOSITE INDEX</a></span></div>
@@ -873,15 +873,15 @@
                             </div>
 
                             <div class="col-sm-5 text-right">
-                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">21,742.02</span></div>
+                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">21,749.27</span></div>
                                                                     <div class="price_change">
-                                        <span data-value="price_change">+91.531 +0.423%</span>
+                                        <span data-value="price_change">+98.783 +0.456%</span>
                                     </div>
                                                             </div>
 
                         </div>
                     </div>
-                                    <div class="col-md-4" data-code="^GSPC" data-ref-price="6829.370137" data-price="6842.23" data-decimal="2" data-decimal-pc="3">
+                                    <div class="col-md-4" data-code="^GSPC" data-ref-price="6829.369902" data-price="6847.97" data-decimal="2" data-decimal-pc="3">
                         <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
                             <div class="col-sm-7">
                                 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/GSPC">S&P 500</a></span></div>
@@ -889,15 +889,15 @@
                             </div>
 
                             <div class="col-sm-5 text-right">
-                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">6,842.23</span></div>
+                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">6,847.97</span></div>
                                                                     <div class="price_change">
-                                        <span data-value="price_change">+12.860 +0.188%</span>
+                                        <span data-value="price_change">+18.600 +0.272%</span>
                                     </div>
                                                             </div>
 
                         </div>
                     </div>
-                                    <div class="col-md-4" data-code="^IXIC" data-ref-price="23413.673953" data-price="23422.047" data-decimal="2" data-decimal-pc="3">
+                                    <div class="col-md-4" data-code="^IXIC" data-ref-price="23413.67433" data-price="23445.938" data-decimal="2" data-decimal-pc="3">
                         <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
                             <div class="col-sm-7">
                                 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/IXIC">NASDAQ Composite</a></span></div>
@@ -905,15 +905,15 @@
                             </div>
 
                             <div class="col-sm-5 text-right">
-                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">23,422.05</span></div>
+                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">23,445.94</span></div>
                                                                     <div class="price_change">
-                                        <span data-value="price_change">+8.373 +0.036%</span>
+                                        <span data-value="price_change">+32.264 +0.138%</span>
                                     </div>
                                                             </div>
 
                         </div>
                     </div>
-                                    <div class="col-md-4" data-code="GSPTSE" data-ref-price="31049.28" data-price="31194.03" data-decimal="2" data-decimal-pc="3">
+                                    <div class="col-md-4" data-code="GSPTSE" data-ref-price="31049.27922" data-price="31203.58" data-decimal="2" data-decimal-pc="3">
                         <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
                             <div class="col-sm-7">
                                 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/GSPTSE">S&P/TSX Composite index</a></span></div>
@@ -921,15 +921,15 @@
                             </div>
 
                             <div class="col-sm-5 text-right">
-                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">31,194.03</span></div>
+                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">31,203.58</span></div>
                                                                     <div class="price_change">
-                                        <span data-value="price_change">+144.750 +0.466%</span>
+                                        <span data-value="price_change">+154.301 +0.497%</span>
                                     </div>
                                                             </div>
 
                         </div>
                     </div>
-                                    <div class="col-md-4" data-code="BVSP" data-ref-price="161092.25312" data-price="161317.05" data-decimal="2" data-decimal-pc="3">
+                                    <div class="col-md-4" data-code="BVSP" data-ref-price="161092.24625" data-price="161250.34" data-decimal="2" data-decimal-pc="3">
                         <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
                             <div class="col-sm-7">
                                 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/BVSP">IBOVESPA</a></span></div>
@@ -937,9 +937,9 @@
                             </div>
 
                             <div class="col-sm-5 text-right">
-                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">161,317.05</span></div>
+                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">161,250.34</span></div>
                                                                     <div class="price_change">
-                                        <span data-value="price_change">+224.797 +0.140%</span>
+                                        <span data-value="price_change">+158.094 +0.098%</span>
                                     </div>
                                                             </div>
 
@@ -961,7 +961,7 @@
 
                         </div>
                     </div>
-                                    <div class="col-md-4" data-code="BZ=F" data-ref-price="62.4499994" data-price="62.81" data-decimal="2" data-decimal-pc="3">
+                                    <div class="col-md-4" data-code="BZ=F" data-ref-price="62.450002" data-price="63.03" data-decimal="2" data-decimal-pc="3">
                         <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
                             <div class="col-sm-7">
                                 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/BZ%3DF">Brent Oil</a></span></div>
@@ -969,15 +969,15 @@
                             </div>
 
                             <div class="col-sm-5 text-right">
-                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">62.81</span></div>
+                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">63.03</span></div>
                                                                     <div class="price_change">
-                                        <span data-value="price_change">+0.360 +0.576%</span>
+                                        <span data-value="price_change">+0.580 +0.929%</span>
                                     </div>
                                                             </div>
 
                         </div>
                     </div>
-                                    <div class="col-md-4" data-code="CL=F" data-ref-price="58.63999924" data-price="59.09" data-decimal="2" data-decimal-pc="3">
+                                    <div class="col-md-4" data-code="CL=F" data-ref-price="58.63999756" data-price="59.33" data-decimal="2" data-decimal-pc="3">
                         <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
                             <div class="col-sm-7">
                                 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/CL%3DF">Crude Oil</a></span></div>
@@ -985,15 +985,15 @@
                             </div>
 
                             <div class="col-sm-5 text-right">
-                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">59.09</span></div>
+                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">59.33</span></div>
                                                                     <div class="price_change">
-                                        <span data-value="price_change">+0.450 +0.767%</span>
+                                        <span data-value="price_change">+0.690 +1.177%</span>
                                     </div>
                                                             </div>
 
                         </div>
                     </div>
-                                    <div class="col-md-4" data-code="GC=F" data-ref-price="4220.8" data-price="4239.8" data-decimal="2" data-decimal-pc="3">
+                                    <div class="col-md-4" data-code="GC=F" data-ref-price="4220.799902" data-price="4242.4" data-decimal="2" data-decimal-pc="3">
                         <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
                             <div class="col-sm-7">
                                 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/GC%3DF">Gold</a></span></div>
@@ -1001,15 +1001,15 @@
                             </div>
 
                             <div class="col-sm-5 text-right">
-                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">4,239.80</span></div>
+                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">4,242.40</span></div>
                                                                     <div class="price_change">
-                                        <span data-value="price_change">+19.000 +0.450%</span>
+                                        <span data-value="price_change">+21.600 +0.512%</span>
                                     </div>
                                                             </div>
 
                         </div>
                     </div>
-                                    <div class="col-md-4" data-code="SI=F" data-ref-price="58.7029979" data-price="58.845" data-decimal="2" data-decimal-pc="3">
+                                    <div class="col-md-4" data-code="SI=F" data-ref-price="58.70299805" data-price="58.88" data-decimal="2" data-decimal-pc="3">
                         <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
                             <div class="col-sm-7">
                                 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/SI%3DF">Silver</a></span></div>
@@ -1017,9 +1017,9 @@
                             </div>
 
                             <div class="col-sm-5 text-right">
-                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">58.85</span></div>
+                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">58.88</span></div>
                                                                     <div class="price_change">
-                                        <span data-value="price_change">+0.142 +0.242%</span>
+                                        <span data-value="price_change">+0.177 +0.302%</span>
                                     </div>
                                                             </div>
 
@@ -1217,7 +1217,7 @@
 
                         </div>
                     </div>
-                                    <div class="col-md-4" data-code="BTC-USD" data-ref-price="90985.766" data-price="92658.016" data-decimal="2" data-decimal-pc="3">
+                                    <div class="col-md-4" data-code="BTC-USD" data-ref-price="91720.6531" data-price="92533.2" data-decimal="2" data-decimal-pc="3">
                         <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
                             <div class="col-sm-7">
                                 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/BTC-USD">Bitcoin USD</a></span></div>
@@ -1225,15 +1225,15 @@
                             </div>
 
                             <div class="col-sm-5 text-right">
-                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">92,658.02</span></div>
+                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">92,533.20</span></div>
                                                                     <div class="price_change">
-                                        <span data-value="price_change">+1672.250 +1.838%</span>
+                                        <span data-value="price_change">+812.547 +0.886%</span>
                                     </div>
                                                             </div>
 
                         </div>
                     </div>
-                                    <div class="col-md-4" data-code="ETH-USD" data-ref-price="2997.11106" data-price="3108.6782" data-decimal="2" data-decimal-pc="3">
+                                    <div class="col-md-4" data-code="ETH-USD" data-ref-price="3011.04099" data-price="3099.7324" data-decimal="2" data-decimal-pc="3">
                         <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
                             <div class="col-sm-7">
                                 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/ETH-USD">Ethereum USD</a></span></div>
@@ -1241,9 +1241,9 @@
                             </div>
 
                             <div class="col-sm-5 text-right">
-                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">3,108.68</span></div>
+                                <div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">3,099.73</span></div>
                                                                     <div class="price_change">
-                                        <span data-value="price_change">+111.567 +3.722%</span>
+                                        <span data-value="price_change">+88.691 +2.946%</span>
                                     </div>
                                                             </div>
 
