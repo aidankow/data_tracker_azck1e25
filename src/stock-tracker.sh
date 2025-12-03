@@ -48,7 +48,7 @@ function clean_prices {
 function get_date {
     DATE=$(date +"%Y-%m-%d")
     TIME=$(date +"%H:%M:%S")
-    DATETIME="$DATE,$TIME"
+    DATETIME="$DATE $TIME"
 
     NUM_MARKETS=$(wc -l < "$MARKETS_FILE")
     yes "$DATETIME" | head -n "$NUM_MARKETS" > "$TIME_TEMP"
@@ -57,15 +57,15 @@ function get_date {
 function format_data {
     clean_prices
     get_date
+    
+    CLEANED_DATA=textfiles/cleaned_data.csv
+    MARKET_IDS=textfiles/marketIDs.txt
+    FILTER=textfiles/filter.txt
+    paste -d "," "$MARKETS_FILE" "$PRICES_FILE" "$TIME_TEMP" | grep -Ff "$FILTER" > "$CLEANED_DATA"
+    rm $TIME_TEMP
 
-    NEW_FILE=textfiles/cleaned_data.csv
-    paste -d "," "$MARKETS_FILE" "$PRICES_FILE" "$TIME_TEMP" > "$NEW_FILE"
-    rm "$TIME_TEMP"
-
-    awk -F, \
-    'NR==FNR{ market[$2]=$1; next } ($1 in market){ $1 = market[$1]; print }' \
-    OFS=, textfiles/marketIDs.csv "$NEW_FILE" > "$NEW_FILE.tmp"
-    mv "$NEW_FILE.tmp" "$NEW_FILE"
+    paste -d "," "$MARKET_IDS" "$CLEANED_DATA" > "$CLEANED_DATA.tmp"
+    mv "$CLEANED_DATA.tmp" "$CLEANED_DATA"
 }
 
 if scrape_website; then

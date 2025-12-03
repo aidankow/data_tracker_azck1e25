@@ -24,8 +24,7 @@ function create_table_for {
         DataPointID INT AUTO_INCREMENT PRIMARY KEY,
         MarketID VARCHAR(8),
         Price DECIMAL(10,2),
-        DateCollected DATE,
-        TimeCollected TIME,
+        Timestamp DATETIME,
         FOREIGN KEY (MarketID) REFERENCES Markets(MarketID)
     );
 EOF
