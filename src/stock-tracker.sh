@@ -57,10 +57,14 @@ function get_date {
 function format_data {
     clean_prices
     get_date
-    
+
     NEW_FILE=textfiles/cleaned_data.csv
-    paste -d "," "$MARKETS_FILE" "$PRICES_FILE" "$TIME_TEMP" | grep -Ff textfiles/filter.txt > "$NEW_FILE"
-    rm $TIME_TEMP
+    paste -d "," "$MARKETS_FILE" "$PRICES_FILE" "$TIME_TEMP" > "$NEW_FILE"
+    rm "$TIME_TEMP"
+
+    awk -F, 'NR==FNR { market[$2]=$1; next } ($1 in market) { $1 = market[$1]; print }' \
+    OFS=, textfiles/marketIDs.csv "$NEW_FILE" > "$NEW_FILE.tmp"
+    mv "$NEW_FILE.tmp" "$NEW_FILE"
 }
 
 if scrape_website; then
