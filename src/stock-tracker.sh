@@ -10,6 +10,7 @@ function scrape_website {
     ALLSTOCKS_FILE="textfiles/stocks.txt"
     MARKETS_FILE="textfiles/markets.txt"
     PRICES_FILE="textfiles/prices.txt"
+    TIME_TEMP="textfiles/time.tmp"
 
     MAX_ATTEMPTS=10
     attempts=0
@@ -35,17 +36,35 @@ function scrape_website {
     return 0
 }
 
-function match_data {
-    NEW_FILE=textfiles/cleaned_data.csv
+function clean_prices {
     NUM_MARKETS=$(wc -l < "$MARKETS_FILE")
     head -n "$NUM_MARKETS" "$PRICES_FILE" > "${PRICES_FILE}.tmp"
     mv "${PRICES_FILE}.tmp" "$PRICES_FILE"
 
-    paste -d "," "$MARKETS_FILE" "$PRICES_FILE" | grep -Ff textfiles/filter.txt > "$NEW_FILE"
+    awk 'NR <= 30 { printf("%.2f\n", $1); next } NR >= 31 && NR <= 44 { printf("%.4f\n", $1); next }' < "$PRICES_FILE" > "${PRICES_FILE}.tmp"
+    mv "${PRICES_FILE}.tmp" "$PRICES_FILE"
+}
+
+function get_date {
+    DATE=$(date +"%Y-%m-%d")
+    TIME=$(date +"%H:%M:%S")
+    DATETIME="$DATE,$TIME"
+
+    NUM_MARKETS=$(wc -l < "$MARKETS_FILE")
+    yes "$DATETIME" | head -n "$NUM_MARKETS" > "$TIME_TEMP"
+}
+
+function format_data {
+    clean_prices
+    get_date
+    
+    NEW_FILE=textfiles/cleaned_data.csv
+    paste -d "," "$MARKETS_FILE" "$PRICES_FILE" "$TIME_TEMP" | grep -Ff textfiles/filter.txt > "$NEW_FILE"
+    rm $TIME_TEMP
 }
 
 if scrape_website; then
-    match_data
+    format_data
 else
     echo "(ERROR) Failed to scrape website."
     exit 1
