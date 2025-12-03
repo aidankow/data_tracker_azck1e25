@@ -60,7 +60,7 @@ function format_data {
     
     CLEANED_DATA=textfiles/cleaned_data.csv
     MARKET_IDS=textfiles/marketIDs.txt
-    FILTER=textfiles/filter.txt
+    FILTER=textfiles/marketNames.txt
     paste -d "," "$MARKETS_FILE" "$PRICES_FILE" "$TIME_TEMP" | grep -Ff "$FILTER" > "$CLEANED_DATA"
     rm $TIME_TEMP
 
