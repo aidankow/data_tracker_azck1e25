@@ -1,5 +1,4 @@
 #!/bin/bash
-MYSQL="/Applications/XAMPP/xamppfiles/bin/mysql"
 # XAMPP_BIN="/Applications/XAMPP/xamppfiles/bin"
 
 # echo "Starting Apache..."
@@ -8,13 +7,15 @@ MYSQL="/Applications/XAMPP/xamppfiles/bin/mysql"
 # echo "Starting MySQL..."
 # sudo "$XAMPP_BIN/mysql.server" start
 
+MYSQL="/Applications/XAMPP/xamppfiles/bin/mysql"
+
 $MYSQL -u root -e "CREATE DATABASE IF NOT EXISTS my_market_tracker;"
 
 $MYSQL -u root my_market_tracker <<EOF
-CREATE TABLE IF NOT EXISTS Markets(
+CREATE TABLE IF NOT EXISTS markets(
     MarketID VARCHAR(8) PRIMARY KEY,
     MarketName VARCHAR(256),
-    GraphID VARCHAR(8)
+    GraphID VARCHAR(64)
 );
 EOF
 
@@ -30,17 +31,17 @@ function create_table_for {
 EOF
 }
 
-create_table_for FBMKLCI
-create_table_for CPO
-create_table_for SGDMYR
-create_table_for USDMYR
-create_table_for CNYMYR
-create_table_for GBPMYR
-create_table_for HKDMYR
-create_table_for TWDMYR
-create_table_for JYPMYR
-create_table_for NZDMYR
-create_table_for AUDMYR
-create_table_for EURMYR
-create_table_for CADMYR
-create_table_for CHFMYR
+create_table_for fbmklci
+create_table_for cpo
+create_table_for sgdmyr
+create_table_for usdmyr
+create_table_for cnymyr
+create_table_for gbpmyr
+create_table_for hkdmyr
+create_table_for twdmyr
+create_table_for jypmyr
+create_table_for nzdmyr
+create_table_for audmyr
+create_table_for eurmyr
+create_table_for cadmyr
+create_table_for chfmyr

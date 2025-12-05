@@ -1,16 +1,10 @@
 #!/bin/bash
-DAY=$(date +"%u")
-if [ "$DAY" -ge 6 ]; then
-    echo "Market Closed"
-    exit 0
-fi
-
 function scrape_website {
     URL='https://www.klsescreener.com/v2/markets'
-    ALLSTOCKS_FILE="textfiles/stocks.txt"
-    MARKETS_FILE="textfiles/markets.txt"
-    PRICES_FILE="textfiles/prices.txt"
-    TIME_TEMP="textfiles/time.tmp"
+    ALLSTOCKS_FILE="../textfiles/stocks.txt"
+    MARKETS_FILE="../textfiles/markets.txt"
+    PRICES_FILE="../textfiles/prices.txt"
+    TIME_TEMP="../textfiles/time.tmp"
 
     MAX_ATTEMPTS=10
     attempts=0
@@ -58,9 +52,9 @@ function format_data {
     clean_prices
     get_date
     
-    CLEANED_DATA=textfiles/cleaned_data.csv
-    MARKET_IDS=textfiles/marketIDs.txt
-    FILTER=textfiles/marketNames.txt
+    CLEANED_DATA="../textfiles/cleaned_data.csv"
+    MARKET_IDS="../textfiles/marketIDs.txt"
+    FILTER="../textfiles/marketNames.txt"
     paste -d "," "$MARKETS_FILE" "$PRICES_FILE" "$TIME_TEMP" | grep -Ff "$FILTER" > "$CLEANED_DATA"
     rm $TIME_TEMP
 
