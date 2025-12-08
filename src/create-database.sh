@@ -1,13 +1,6 @@
 #!/bin/bash
-# XAMPP_BIN="/Applications/XAMPP/xamppfiles/bin"
-
-# echo "Starting Apache..."
-# sudo "$XAMPP_BIN/apachectl" start
-
-# echo "Starting MySQL..."
-# sudo "$XAMPP_BIN/mysql.server" start
-
 MYSQL="/Applications/XAMPP/xamppfiles/bin/mysql"
+DATA_FILE="../textfiles/cleaned_data.csv"
 
 $MYSQL -u root -e "CREATE DATABASE IF NOT EXISTS my_market_tracker;"
 
@@ -19,7 +12,7 @@ CREATE TABLE IF NOT EXISTS markets(
 );
 EOF
 
-function create_table1_for {
+function create_table2dp_for {
     $MYSQL -u root my_market_tracker <<EOF
     CREATE TABLE IF NOT EXISTS $1 (
         DataPointID INT AUTO_INCREMENT PRIMARY KEY,
@@ -31,7 +24,7 @@ function create_table1_for {
 EOF
 }
 
-function create_table2_for {
+function create_table4dp_for {
     $MYSQL -u root my_market_tracker <<EOF
     CREATE TABLE IF NOT EXISTS $1 (
         DataPointID INT AUTO_INCREMENT PRIMARY KEY,
@@ -43,17 +36,25 @@ function create_table2_for {
 EOF
 }
 
-create_table1_for fbmklci
-create_table1_for cpo
-create_table2_for sgdmyr
-create_table2_for usdmyr
-create_table2_for cnymyr
-create_table2_for gbpmyr
-create_table2_for hkdmyr
-create_table2_for twdmyr
-create_table2_for jypmyr
-create_table2_for nzdmyr
-create_table2_for audmyr
-create_table2_for eurmyr
-create_table2_for cadmyr
-create_table2_for chfmyr
+create_table2dp_for fbmklci
+create_table2dp_for cpo
+create_table4dp_for sgdmyr
+create_table4dp_for usdmyr
+create_table4dp_for cnymyr
+create_table4dp_for gbpmyr
+create_table4dp_for hkdmyr
+create_table4dp_for twdmyr
+create_table4dp_for jypmyr
+create_table4dp_for nzdmyr
+create_table4dp_for audmyr
+create_table4dp_for eurmyr
+create_table4dp_for cadmyr
+create_table4dp_for chfmyr
+
+while IFS=',' read -r MarketID MarketName Price Timestamp; do
+    $MYSQL -u root my_market_tracker <<EOF
+    INSERT INTO markets
+    VALUES ('$MarketID', '$MarketName', '$MarketID-graph.png'
+    );
+EOF
+done < "$DATA_FILE"
