@@ -8,10 +8,10 @@ EOF
 
 function create_graph_for {
     gnuplot <<EOF
-        set datafile separator "\t"
+        set datafile separator tab
         set xdata time
         set timefmt "%Y-%m-%d %H:%M:%S"
-        set terminal pngcairo size 1200,600
+        set term pngcairo font "Times-New-Roman,12" size 1200,800
         set output "$1"
         set grid
         set title "$3"
