@@ -45,7 +45,7 @@ function get_date {
     DATETIME="$DATE $TIME"
 
     NUM_MARKETS=$(wc -l < "$MARKETS_FILE")
-    yes "$DATETIME" | head -n "$NUM_MARKETS" > "$TIME_TEMP"
+    yes "$DATETIME","$TIME" | head -n "$NUM_MARKETS" > "$TIME_TEMP"
 }
 
 function format_data {

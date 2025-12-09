@@ -4,14 +4,6 @@ DATA_FILE="../textfiles/cleaned_data.csv"
 
 $MYSQL -u root -e "CREATE DATABASE IF NOT EXISTS my_market_tracker;"
 
-$MYSQL -u root my_market_tracker <<EOF
-CREATE TABLE IF NOT EXISTS markets(
-    MarketID VARCHAR(8) PRIMARY KEY,
-    MarketName VARCHAR(256),
-    GraphID VARCHAR(64)
-);
-EOF
-
 function create_table2dp_for {
     $MYSQL -u root my_market_tracker <<EOF
     CREATE TABLE IF NOT EXISTS $1 (
@@ -50,6 +42,14 @@ create_table4dp_for audmyr
 create_table4dp_for eurmyr
 create_table4dp_for cadmyr
 create_table4dp_for chfmyr
+
+$MYSQL -u root my_market_tracker <<EOF
+CREATE TABLE IF NOT EXISTS markets(
+    MarketID VARCHAR(8) PRIMARY KEY,
+    MarketName VARCHAR(256),
+    GraphID VARCHAR(64)
+);
+EOF
 
 while IFS=',' read -r MarketID MarketName Price Timestamp; do
     $MYSQL -u root my_market_tracker <<EOF
