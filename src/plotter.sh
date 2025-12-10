@@ -14,6 +14,7 @@ function create_graph_for {
         set term pngcairo font "Times-New-Roman,12" size 1200,800
         set output "$1"
         set grid
+        set key outside
         set title "$3"
         set xlabel "Timestamp"
         set ylabel "Price"
