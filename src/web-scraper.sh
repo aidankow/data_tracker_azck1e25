@@ -35,7 +35,8 @@ function clean_prices {
     head -n "$NUM_MARKETS" "$PRICES_FILE" > "${PRICES_FILE}.tmp"
     mv "${PRICES_FILE}.tmp" "$PRICES_FILE"
 
-    awk 'NR <= 30 { printf("%.2f\n", $1); next } NR >= 31 && NR <= 44 { printf("%.4f\n", $1); next }' < "$PRICES_FILE" > "${PRICES_FILE}.tmp"
+    awk 'NR <= 30 { printf("%.2f\n", $1); next } NR >= 31 && NR <= 44 { printf("%.4f\n", $1); next }' < "$PRICES_FILE" > \
+    "${PRICES_FILE}.tmp"
     mv "${PRICES_FILE}.tmp" "$PRICES_FILE"
 }
 
