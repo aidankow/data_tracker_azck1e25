@@ -1,4 +1,8 @@
 MYSQL="/Applications/XAMPP/xamppfiles/bin/mysql"
+if [ ! -x "$MYSQL" ]; then
+    echo "Error: MySQL client not found: $MYSQL"
+    exit 1
+fi
 
 function fetch_plots_for {
     $MYSQL -u root my_market_tracker <<EOF | tail -n +2 > "$2"
