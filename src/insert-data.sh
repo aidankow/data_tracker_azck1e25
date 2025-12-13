@@ -21,7 +21,7 @@ FKLI_CT=$(date -j -f "%H:%M:%S" "18:05:00" "+%s") # closing time: 5:15
 line_no=0
 while IFS=',' read -r MarketID MarketName Price Timestamp CurrentTime; do
     line_no=$((line_no + 1))
-    
+
     CURRENT_TIME=$(date -j -f "%H:%M:%S" $CurrentTime "+%s")
     if [[ "$MarketID" == "CPO" ]]; then
         if (( CURRENT_TIME < CPO_OT || CURRENT_TIME > CPO_CT )); then
@@ -38,7 +38,7 @@ while IFS=',' read -r MarketID MarketName Price Timestamp CurrentTime; do
     VALUES ('$MarketID', '$Price', '$Timestamp');
 EOF
     if [ $? -ne 0 ]; then
-        echo "Line $line_no: MySQL insert failed (MarketID=$MarketID)"
+        echo "Line $line_no: MySQL insert failed ($MarketID)"
         continue
     fi
 done < "$DATA_FILE"

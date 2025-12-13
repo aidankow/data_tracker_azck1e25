@@ -1,14 +1,13 @@
 MYSQL="/Applications/XAMPP/xamppfiles/bin/mysql"
 
-if [ ! -x "$MYSQL" ]; then
-    echo "Error: MySQL client not found: $MYSQL"
-    exit 1
-fi
-
 function fetch_plots_for {
     $MYSQL -u root my_market_tracker <<EOF | tail -n +2 > "$2"
     SELECT Timestamp, Price FROM $1 ORDER BY Timestamp;
 EOF
+    if [ $? -ne 0 ]; then
+        echo "Error: Failed to fetch plots"
+        exit 1
+    fi
 }
 
 function create_graph_for {
@@ -30,24 +29,20 @@ EOF
 
 function iterate_markets {
     MARKETS_FILE="../textfiles/marketIDs.txt"
-    if [ ! -f "$MARKETS_FILE" ]; then
-        echo "Error: Markets file not found: $MARKETS_FILE"
-        exit 1
-    fi
-
     while IFS= read -r MarketID; do
         OUTPUT_FILE="../plots/$MarketID.dat"
-        GRAPH_FILE="../graphs/$GRAPH_NAME"
         GRAPH_NAME=$($MYSQL -u root -N my_market_tracker -e "SELECT GraphID FROM markets WHERE MarketID='$MarketID';")
         if [ $? -ne 0 ]; then
-            echo "Error: Failed to get GraphID for $MarketID"
+            echo "Error: Failed to find GraphID for $MarketID"
             continue
         fi
+        GRAPH_FILE="../graphs/$GRAPH_NAME"
         MarketName=$($MYSQL -u root -N my_market_tracker -e "SELECT MarketName FROM markets WHERE MarketID='$MarketID';")
         if [ $? -ne 0 ]; then
-            echo "Error: Failed to get MarketName for $MarketID"
+            echo "Error: Failed to find MarketName for $MarketID"
             continue
         fi
+
         fetch_plots_for $MarketID $OUTPUT_FILE
         create_graph_for $GRAPH_FILE $OUTPUT_FILE "$MarketName"
     done < $MARKETS_FILE

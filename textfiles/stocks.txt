@@ -385,30 +385,30 @@ Please consider supporting us by disabling or pausing your ad blocker.<br/>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="FTSE" data-ref-price="9703.160039" data-price="9708.12" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="FTSE" data-ref-price="9703.159883" data-price="9649.03" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/FTSE">FTSE 100</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/gb.svg" height="12"/> <span class="align-middle">United Kingdom</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">9,708.12</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">9,649.03</span></div>
 <div class="price_change">
-<span data-value="price_change">+4.960 +0.051%</span>
+<span data-value="price_change">-54.130 -0.558%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="GDAXI" data-ref-price="24294.609766" data-price="24341.6" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="GDAXI" data-ref-price="24294.60914" data-price="24186.49" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/GDAXI">DAX</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/de.svg" height="12"/> <span class="align-middle">Germany</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">24,341.60</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">24,186.49</span></div>
 <div class="price_change">
-<span data-value="price_change">+46.990 +0.193%</span>
+<span data-value="price_change">-108.119 -0.445%</span>
 </div>
 </div>
 </div>
@@ -441,254 +441,254 @@ Please consider supporting us by disabling or pausing your ad blocker.<br/>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="^DJI" data-ref-price="48057.7483" data-price="48704.01" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="^DJI" data-ref-price="48704.01094" data-price="48458.05" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/DJI">Dow Jones</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/us.svg" height="12"/> <span class="align-middle">United States</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">48,704.01</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">48,458.05</span></div>
 <div class="price_change">
-<span data-value="price_change">+646.262 +1.345%</span>
+<span data-value="price_change">-245.961 -0.505%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="^NYA" data-ref-price="21933.30662" data-price="22114.416" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="^NYA" data-ref-price="22114.41636" data-price="22004.348" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/NYA">NYSE COMPOSITE INDEX</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/us.svg" height="12"/> <span class="align-middle">United States</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">22,114.42</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">22,004.35</span></div>
 <div class="price_change">
-<span data-value="price_change">+181.109 +0.826%</span>
+<span data-value="price_change">-110.068 -0.498%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="^GSPC" data-ref-price="6886.680176" data-price="6901" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="^GSPC" data-ref-price="6900.99984" data-price="6827.41" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/GSPC">S&P 500</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/us.svg" height="12"/> <span class="align-middle">United States</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">6,901.00</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">6,827.41</span></div>
 <div class="price_change">
-<span data-value="price_change">+14.320 +0.208%</span>
+<span data-value="price_change">-73.590 -1.066%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="^IXIC" data-ref-price="23654.15578" data-price="23593.855" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="^IXIC" data-ref-price="23593.85555" data-price="23195.17" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/IXIC">NASDAQ Composite</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/us.svg" height="12"/> <span class="align-middle">United States</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">23,593.86</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">23,195.17</span></div>
 <div class="price_change">
-<span data-value="price_change">-60.301 -0.255%</span>
+<span data-value="price_change">-398.686 -1.690%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="GSPTSE" data-ref-price="31490.84914" data-price="31660.73" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="GSPTSE" data-ref-price="31660.72984" data-price="31527.39" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/GSPTSE">S&P/TSX Composite index</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/ca.svg" height="12"/> <span class="align-middle">Canada</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">31,660.73</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">31,527.39</span></div>
 <div class="price_change">
-<span data-value="price_change">+169.881 +0.539%</span>
+<span data-value="price_change">-133.340 -0.421%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="BVSP" data-ref-price="159074.975" data-price="159189.1" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="BVSP" data-ref-price="159189.0988" data-price="160766.38" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/BVSP">IBOVESPA</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/br.svg" height="12"/> <span class="align-middle">Brazil</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">159,189.10</span></div>
+<div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">160,766.38</span></div>
 <div class="price_change">
-<span data-value="price_change">+114.125 +0.072%</span>
+<span data-value="price_change">+1577.281 +0.991%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="CPO" data-ref-price="4073" data-price="4029" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="CPO" data-ref-price="3986.5" data-price="4038" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/CPO">Crude Palm Oil</a></span></div>
 <div style="color: darkgrey"> <span class="align-middle">Malaysia</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">4,029.00</span></div>
+<div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">4,038.00</span></div>
 <div class="price_change">
-<span data-value="price_change">-44.000 -1.080%</span>
+<span data-value="price_change">+51.500 +1.292%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="BZ=F" data-ref-price="61.279999542" data-price="61.3" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="BZ=F" data-ref-price="61.27999985" data-price="61.12" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/BZ%3DF">Brent Oil</a></span></div>
 <div style="color: darkgrey"> <span class="align-middle"></span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">61.30</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">61.12</span></div>
 <div class="price_change">
-<span data-value="price_change">+0.020 +0.033%</span>
+<span data-value="price_change">-0.160 -0.261%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="CL=F" data-ref-price="57.599998627" data-price="57.66" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="CL=F" data-ref-price="57.59999985" data-price="57.44" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/CL%3DF">Crude Oil</a></span></div>
 <div style="color: darkgrey"> <span class="align-middle"></span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">57.66</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">57.44</span></div>
 <div class="price_change">
-<span data-value="price_change">+0.060 +0.104%</span>
+<span data-value="price_change">-0.160 -0.278%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="GC=F" data-ref-price="4313.000098" data-price="4363.9" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="GC=F" data-ref-price="4313.000195" data-price="4328.3" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/GC%3DF">Gold</a></span></div>
 <div style="color: darkgrey"> <span class="align-middle"></span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">4,363.90</span></div>
+<div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">4,328.30</span></div>
 <div class="price_change">
-<span data-value="price_change">+50.900 +1.180%</span>
+<span data-value="price_change">+15.300 +0.355%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="SI=F" data-ref-price="64.5919992" data-price="64.41" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="SI=F" data-ref-price="64.592003" data-price="62.007" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/SI%3DF">Silver</a></span></div>
 <div style="color: darkgrey"> <span class="align-middle"></span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">64.41</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">62.01</span></div>
 <div class="price_change">
-<span data-value="price_change">-0.182 -0.282%</span>
+<span data-value="price_change">-2.585 -4.002%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="SGDMYR=X" data-ref-price="3.180199984" data-price="3.1688" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="SGDMYR=X" data-ref-price="3.180200039" data-price="3.1735" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/SGDMYR%3DX">SGD/MYR</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/sg.svg" height="12"/> <span class="align-middle">Singapore</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">3.1688</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">3.1735</span></div>
 <div class="price_change">
-<span data-value="price_change">-0.0114 -0.3585%</span>
+<span data-value="price_change">-0.0067 -0.2107%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="USDMYR=X" data-ref-price="4.107999722" data-price="4.091" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="USDMYR=X" data-ref-price="4.107999664" data-price="4.0935" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/USDMYR%3DX">USD/MYR</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/us.svg" height="12"/> <span class="align-middle">USA</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">4.0910</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">4.0935</span></div>
 <div class="price_change">
-<span data-value="price_change">-0.0170 -0.4138%</span>
+<span data-value="price_change">-0.0145 -0.3530%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="CNYMYR=X" data-ref-price="0.5822799856" data-price="0.58014" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="CNYMYR=X" data-ref-price="0.5822799758" data-price="0.58063" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/CNYMYR%3DX">CNY/MYR</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/cn.svg" height="12"/> <span class="align-middle">China</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">0.5801</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">0.5806</span></div>
 <div class="price_change">
-<span data-value="price_change">-0.0021 -0.3675%</span>
+<span data-value="price_change">-0.0016 -0.2834%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="GBPMYR=X" data-ref-price="5.500100105" data-price="5.4772" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="GBPMYR=X" data-ref-price="5.50009992" data-price="5.4819" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/GBPMYR%3DX">GBP/MYR</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/gb.svg" height="12"/> <span class="align-middle">UK</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">5.4772</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">5.4819</span></div>
 <div class="price_change">
-<span data-value="price_change">-0.0229 -0.4164%</span>
+<span data-value="price_change">-0.0182 -0.3309%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="HKDMYR=X" data-ref-price="0.5280600135" data-price="0.52568" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="HKDMYR=X" data-ref-price="0.528060018" data-price="0.52673" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/HKDMYR%3DX">HKD/MYR</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/hk.svg" height="12"/> <span class="align-middle">Hong Kong</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">0.5257</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">0.5267</span></div>
 <div class="price_change">
-<span data-value="price_change">-0.0024 -0.4507%</span>
+<span data-value="price_change">-0.0013 -0.2519%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="TWDMYR=X" data-ref-price="13.109999526" data-price="13.05" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="TWDMYR=X" data-ref-price="13.110000032999999" data-price="13.020000000000001" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/TWDMYR%3DX">100 TWD/MYR</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/tw.svg" height="12"/> <span class="align-middle">Taiwan</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">13.0500</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">13.0200</span></div>
 <div class="price_change">
-<span data-value="price_change">-0.0006 -0.4577%</span>
+<span data-value="price_change">-0.0009 -0.6865%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="JPYMYR=X" data-ref-price="2.635000013" data-price="2.621" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="JPYMYR=X" data-ref-price="2.635000061" data-price="2.6270000000000002" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/JPYMYR%3DX">100 JPY/MYR</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/jp.svg" height="12"/> <span class="align-middle">Japan</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">2.6210</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">2.6270</span></div>
 <div class="price_change">
-<span data-value="price_change">-0.0001 -0.5313%</span>
+<span data-value="price_change">-0.0001 -0.3036%</span>
 </div>
 </div>
 </div>
@@ -707,86 +707,86 @@ Please consider supporting us by disabling or pausing your ad blocker.<br/>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="AUDMYR=X" data-ref-price="2.737900033" data-price="2.7298" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="AUDMYR=X" data-ref-price="2.737899954" data-price="2.7274" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/AUDMYR%3DX">AUD/MYR</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/au.svg" height="12"/> <span class="align-middle">Australia</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">2.7298</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">2.7274</span></div>
 <div class="price_change">
-<span data-value="price_change">-0.0081 -0.2958%</span>
+<span data-value="price_change">-0.0105 -0.3835%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="EURMYR=X" data-ref-price="4.823500108" data-price="4.8013" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="EURMYR=X" data-ref-price="4.82350009" data-price="4.8129" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/EURMYR%3DX">EUR/MYR</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/eu.svg" height="12"/> <span class="align-middle">Europe</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">4.8013</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">4.8129</span></div>
 <div class="price_change">
-<span data-value="price_change">-0.0222 -0.4602%</span>
+<span data-value="price_change">-0.0106 -0.2198%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="CADMYR=X" data-ref-price="2.978099963" data-price="2.9697" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="CADMYR=X" data-ref-price="2.978100009" data-price="2.9723" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/CADMYR%3DX">CAD/MYR</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/ca.svg" height="12"/> <span class="align-middle">Canada</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">2.9697</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">2.9723</span></div>
 <div class="price_change">
-<span data-value="price_change">-0.0084 -0.2821%</span>
+<span data-value="price_change">-0.0058 -0.1948%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="CHFMYR=X" data-ref-price="5.16849998" data-price="5.1485" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="CHFMYR=X" data-ref-price="5.16849993" data-price="5.1524" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/CHFMYR%3DX">CHF/MYR</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/ch.svg" height="12"/> <span class="align-middle">Switzerland</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">5.1485</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">5.1524</span></div>
 <div class="price_change">
-<span data-value="price_change">-0.0200 -0.3870%</span>
+<span data-value="price_change">-0.0161 -0.3115%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="BTC-USD" data-ref-price="90157.1269" data-price="92393.58" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="BTC-USD" data-ref-price="92389.2809" data-price="90405.195" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/BTC-USD">Bitcoin USD</a></span></div>
 <div style="color: darkgrey"> <span class="align-middle"></span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">92,393.58</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">90,405.20</span></div>
 <div class="price_change">
-<span data-value="price_change">+2236.453 +2.481%</span>
+<span data-value="price_change">-1984.086 -2.148%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="ETH-USD" data-ref-price="3200.098525" data-price="3247.36" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="ETH-USD" data-ref-price="3239.68819" data-price="3121.7231" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/ETH-USD">Ethereum USD</a></span></div>
 <div style="color: darkgrey"> <span class="align-middle"></span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">3,247.36</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">3,121.72</span></div>
 <div class="price_change">
-<span data-value="price_change">+47.261 +1.477%</span>
+<span data-value="price_change">-117.965 -3.641%</span>
 </div>
 </div>
 </div>
@@ -4634,7 +4634,7 @@ Please consider supporting us by disabling or pausing your ad blocker.<br/>
 </a>
 <p><a href="https://itunes.apple.com/my/app/klse-screener/id593048150" target="_blank"><img src="//cdn.klsescreener.com/v2/../themes/images/app_store.png" alt="iOS App on AppStore" width="129"></a></p>
 <p><a href="https://appgallery.cloud.huawei.com/marketshare/app/C101209183" target="_blank"><img src="//cdn.klsescreener.com/v2/../themes/images/20200220_AppGallery_Badge_Black.png" alt="Huawei AppGallery" width="129"></a></p>
-<p><a href="http://www.windowsphone.com/ms-my/store/app/klse-screener/d92bdf04-adf1-46f8-ada3-f2e62cb974dc" target="_blank"><img src="/themes/images/154x40_WPS_Download_cyan.png.pagespeed.ce.-xlj2p8hps.png" alt="WP8 App on Windows Phone Store" width="129"></a></p>
+<p><a href="http://www.windowsphone.com/ms-my/store/app/klse-screener/d92bdf04-adf1-46f8-ada3-f2e62cb974dc" target="_blank"><img src="/v2/../themes/images/154x40_WPS_Download_cyan.png" alt="WP8 App on Windows Phone Store" width="129"></a></p>
 </p>
 </div>
 </div>

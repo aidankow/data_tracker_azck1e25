@@ -86,7 +86,7 @@ while IFS=',' read -r MarketID MarketName Price Timestamp; do
     );
 EOF
 if [ $? -ne 0 ]; then
-    echo "Error: Failed to insert market on line $line_no (MarketID=$MarketID)"
+    echo "Error: Failed to insert market on line $line_no ($MarketID)"
     exit 1
 fi
 done < "$DATA_FILE"
