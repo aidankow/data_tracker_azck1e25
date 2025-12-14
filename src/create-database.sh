@@ -56,9 +56,7 @@ CREATE TABLE IF NOT EXISTS markets(
 );
 EOF
 
-line_no=0
 while IFS=',' read -r MarketID MarketName Price Timestamp; do
-    line_no=$((line_no + 1))
     $MYSQL -u root my_market_tracker <<EOF
     INSERT INTO markets
     VALUES ('$MarketID', '$MarketName', '$MarketID-graph.png'
