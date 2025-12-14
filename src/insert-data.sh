@@ -28,9 +28,10 @@ CPO_CT=$(date -j -f "%H:%M:%S" "18:05:00" "+%s") # closing time: 18:00
 FKLI_OT=$(date -j -f "%H:%M:%S" "08:45:00" "+%s") # opening time: 08:45
 FKLI_CT=$(date -j -f "%H:%M:%S" "18:05:00" "+%s") # closing time: 5:15
 
-while IFS=',' read -r MarketID MarketName Price Timestamp CurrentTime; do
-    if ! CURRENT_TIME=$(date -j -f "%H:%M:%S" "$CurrentTime" "+%s"); then
-        echo "(ERROR) Invalid time '$CurrentTime'" >&2
+while IFS=',' read -r MarketID MarketName Price Timestamp; do
+    Time=$(echo "$Timestamp" | cut -d' ' -f2)
+    if ! CURRENT_TIME=$(date -j -f "%H:%M:%S" "$Time" "+%s"); then
+        echo "(ERROR) Invalid time '$Time'" >&2
         continue
     fi
 
