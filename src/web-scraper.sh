@@ -1,4 +1,14 @@
 #!/bin/bash
+
+set -e
+
+#exit codes:
+UNEXPECTED_ERROR=99
+SCRAPE_FAIL=100
+MISSING_FILE=101
+
+trap 'echo "(ERROR) Script failed at line $LINENO" >&2; exit $UNEXPECTED_ERROR' ERR
+
 function scrape_website {
     URL='https://www.klsescreener.com/v2/markets'
     ALLSTOCKS_FILE="../textfiles/stocks.txt"
@@ -8,26 +18,28 @@ function scrape_website {
 
     MAX_ATTEMPTS=10
     attempts=0
-    success=0
 
-    while [ $success -ne 1 ] && [ $attempts -ne $MAX_ATTEMPTS ]; do
-        curl -o "$ALLSTOCKS_FILE" "$URL"
+    while [ $attempts -lt $MAX_ATTEMPTS ]; do
+        curl -fsS -o "$ALLSTOCKS_FILE" "$URL" || {
+            echo "(ERROR) curl failed in attempt $((attempts+1))" >&2
+            attempts=$((attempts+1))
+            sleep 1
+            continue
+        }
+
         grep -Eo '<a href="/v2/markets/intraday/[^"]+">[^"]+</a>' "$ALLSTOCKS_FILE" \
         | sed -E 's/.*>(.*)<.*/\1/' > "$MARKETS_FILE"
         grep -Eo 'class="col-md-4" data-code="[^"]+" data-ref-price="[^"]+" data-price="[^"]+"' "$ALLSTOCKS_FILE" \
         | sed -E 's/.*data-price="([^"]+)"/\1/' > "$PRICES_FILE"
 
-        if [ -f "$ALLSTOCKS_FILE" ] && [ -f "$MARKETS_FILE" ] && [ -f "$PRICES_FILE" ]; then
-            success=1
-            break
+        if [ -s "$ALLSTOCKS_FILE" ] && [ -s "$MARKETS_FILE" ] && [ -s "$PRICES_FILE" ]; then
+            return 0
         fi
+        echo "(ERROR) files empty in attempt $((attempts+1))" >&2
         attempts=$((attempts+1))
+        sleep 1
     done
-
-    if [ $success -ne 1 ]; then
-        return 1
-    fi
-    return 0
+    return 1
 }
 
 function clean_prices {
@@ -56,16 +68,23 @@ function format_data {
     CLEANED_DATA="../textfiles/cleaned_data.csv"
     MARKET_IDS="../textfiles/marketIDs.txt"
     FILTER="../textfiles/marketNames.txt"
+
+    for f in "$MARKETS_FILE" "$PRICES_FILE" "$MARKET_IDS" "$FILTER"; do
+        if [ ! -s "$f" ]; then
+            echo "(ERROR) Missing or empty file: $f" >&2
+            exit $MISSING_FILE
+        fi
+    done
+
     paste -d "," "$MARKETS_FILE" "$PRICES_FILE" "$TIME_TEMP" | grep -Ff "$FILTER" > "$CLEANED_DATA"
-    rm $TIME_TEMP
+    rm "$TIME_TEMP"
 
     paste -d "," "$MARKET_IDS" "$CLEANED_DATA" > "$CLEANED_DATA.tmp"
     mv "$CLEANED_DATA.tmp" "$CLEANED_DATA"
 }
 
-if scrape_website; then
-    format_data
-else
-    echo "(ERROR) Failed to scrape website."
-    exit 1
+if ! scrape_website; then
+    echo "(ERROR) Failed to scrape website." >&2
+    exit $SCRAPE_FAIL
 fi
+format_data

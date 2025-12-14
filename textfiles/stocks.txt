@@ -609,30 +609,30 @@ Please consider supporting us by disabling or pausing your ad blocker.<br/>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="USDMYR=X" data-ref-price="4.107999664" data-price="4.0935" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="USDMYR=X" data-ref-price="4.1079998665" data-price="4.093" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/USDMYR%3DX">USD/MYR</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/us.svg" height="12"/> <span class="align-middle">USA</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">4.0935</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">4.0930</span></div>
 <div class="price_change">
-<span data-value="price_change">-0.0145 -0.3530%</span>
+<span data-value="price_change">-0.0150 -0.3651%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="CNYMYR=X" data-ref-price="0.5822799758" data-price="0.58063" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="CNYMYR=X" data-ref-price="0.5822799901" data-price="0.58119" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/CNYMYR%3DX">CNY/MYR</a></span></div>
 <div style="color: darkgrey"><img class="align-middle" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/cn.svg" height="12"/> <span class="align-middle">China</span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">0.5806</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">0.5812</span></div>
 <div class="price_change">
-<span data-value="price_change">-0.0016 -0.2834%</span>
+<span data-value="price_change">-0.0011 -0.1872%</span>
 </div>
 </div>
 </div>
@@ -763,30 +763,30 @@ Please consider supporting us by disabling or pausing your ad blocker.<br/>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="BTC-USD" data-ref-price="92389.2809" data-price="90405.195" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="BTC-USD" data-ref-price="90350.35656" data-price="90260.63" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/BTC-USD">Bitcoin USD</a></span></div>
 <div style="color: darkgrey"> <span class="align-middle"></span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">90,405.20</span></div>
+<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">90,260.63</span></div>
 <div class="price_change">
-<span data-value="price_change">-1984.086 -2.148%</span>
+<span data-value="price_change">-89.727 -0.099%</span>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-4" data-code="ETH-USD" data-ref-price="3239.68819" data-price="3121.7231" data-decimal="2" data-decimal-pc="3">
+<div class="col-md-4" data-code="ETH-USD" data-ref-price="3095.113567" data-price="3115.8372" data-decimal="2" data-decimal-pc="3">
 <div class="d-flex row-eq-height" style="padding-top:10px;padding-bottom: 10px;">
 <div class="col-sm-7">
 <div><span class="text-primary text-ellipsis" style="font-size:1.2em;"><a href="/v2/markets/intraday/ETH-USD">Ethereum USD</a></span></div>
 <div style="color: darkgrey"> <span class="align-middle"></span></div>
 </div>
 <div class="col-sm-5 text-right">
-<div data-class="class" style="font-size:1.2em;" class="decreasing"><span class="material-icons inline">trending_down</span><span class="last">3,121.72</span></div>
+<div data-class="class" style="font-size:1.2em;" class="increasing"><span class="material-icons inline">trending_up</span><span class="last">3,115.84</span></div>
 <div class="price_change">
-<span data-value="price_change">-117.965 -3.641%</span>
+<span data-value="price_change">+20.724 +0.670%</span>
 </div>
 </div>
 </div>

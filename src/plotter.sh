@@ -1,17 +1,24 @@
+#!/bin/bash
+
+set -e
+
+#exit codes:
+UNEXPECTED_ERROR=99
+MYSQL_FAIL=100
+MISSING_FILE=101
+
+trap 'echo "(ERROR) Script failed at line $LINENO" >&2; exit $UNEXPECTED_ERROR' ERR
+
 MYSQL="/Applications/XAMPP/xamppfiles/bin/mysql"
 if [ ! -x "$MYSQL" ]; then
-    echo "Error: MySQL client not found: $MYSQL"
-    exit 1
+    echo "(ERROR) MySQL client not found or not executable: $MYSQL" >&2
+    exit $MYSQL_FAIL
 fi
 
 function fetch_plots_for {
     $MYSQL -u root my_market_tracker <<EOF | tail -n +2 > "$2"
     SELECT Timestamp, Price FROM $1 ORDER BY Timestamp;
 EOF
-    if [ $? -ne 0 ]; then
-        echo "Error: Failed to fetch plots"
-        exit 1
-    fi
 }
 
 function create_graph_for {
@@ -33,22 +40,28 @@ EOF
 
 function iterate_markets {
     MARKETS_FILE="../textfiles/marketIDs.txt"
+    if [ ! -s "$MARKETS_FILE" ]; then
+        echo "(ERROR) Missing or empty file: $MARKETS_FILE" >&2
+        exit $MISSING_FILE
+    fi
+
     while IFS= read -r MarketID; do
         OUTPUT_FILE="../plots/$MarketID.dat"
         GRAPH_NAME=$($MYSQL -u root -N my_market_tracker -e "SELECT GraphID FROM markets WHERE MarketID='$MarketID';")
-        if [ $? -ne 0 ]; then
-            echo "Error: Failed to find GraphID for $MarketID"
-            continue
-        fi
         GRAPH_FILE="../graphs/$GRAPH_NAME"
         MarketName=$($MYSQL -u root -N my_market_tracker -e "SELECT MarketName FROM markets WHERE MarketID='$MarketID';")
-        if [ $? -ne 0 ]; then
-            echo "Error: Failed to find MarketName for $MarketID"
-            continue
+
+        fetch_plots_for "$MarketID" "$OUTPUT_FILE"
+        if [ ! -s "$OUTPUT_FILE" ]; then
+            echo "(ERROR) Missing or empty file: $OUTPUT_FILE" >&2
+            exit $MISSING_FILE
         fi
 
-        fetch_plots_for $MarketID $OUTPUT_FILE
-        create_graph_for $GRAPH_FILE $OUTPUT_FILE "$MarketName"
+        create_graph_for "$GRAPH_FILE" "$OUTPUT_FILE" "$MarketName"
+        if [ ! -s "$GRAPH_FILE" ]; then
+            echo "(ERROR) Missing or empty file: $GRAPH_FILE" >&2
+            exit $MISSING_FILE
+        fi
     done < $MARKETS_FILE
 }
 
