@@ -17,8 +17,8 @@ if [ ! -x "$MYSQL" ]; then
     exit $MYSQL_FAIL
 fi
 
-if [ ! -f "$DATA_FILE" ]; then
-    echo "Error: Data file not found: $DATA_FILE"
+if [ ! -s "$DATA_FILE" ]; then
+    echo "Error: Data file not found or is empty: $DATA_FILE"
     exit $MISSING_FILE
 fi
 

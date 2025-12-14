@@ -17,12 +17,28 @@ if [ ! -x "$MYSQL" ]; then
     exit $MYSQL_FAIL
 fi
 
-if [ ! -f "$DATA_FILE" ]; then
-    echo "Error: Data file not found: $DATA_FILE"
+if [ ! -s "$DATA_FILE" ]; then
+    echo "Error: Data file not found or is empty: $DATA_FILE"
     exit $MISSING_FILE
 fi
 
 $MYSQL -u root -e "CREATE DATABASE IF NOT EXISTS my_market_tracker;"
+
+$MYSQL -u root my_market_tracker <<EOF
+CREATE TABLE IF NOT EXISTS markets(
+    MarketID VARCHAR(8) PRIMARY KEY,
+    MarketName VARCHAR(256),
+    GraphID VARCHAR(64)
+);
+EOF
+
+while IFS=',' read -r MarketID MarketName Price Timestamp; do
+    $MYSQL -u root my_market_tracker <<EOF
+    INSERT INTO markets
+    VALUES ('$MarketID', '$MarketName', '$MarketID-graph.png'
+    );
+EOF
+done < "$DATA_FILE"
 
 function create_table2dp_for {
     $MYSQL -u root my_market_tracker <<EOF
@@ -47,22 +63,6 @@ function create_table4dp_for {
     );
 EOF
 }
-
-$MYSQL -u root my_market_tracker <<EOF
-CREATE TABLE IF NOT EXISTS markets(
-    MarketID VARCHAR(8) PRIMARY KEY,
-    MarketName VARCHAR(256),
-    GraphID VARCHAR(64)
-);
-EOF
-
-while IFS=',' read -r MarketID MarketName Price Timestamp; do
-    $MYSQL -u root my_market_tracker <<EOF
-    INSERT INTO markets
-    VALUES ('$MarketID', '$MarketName', '$MarketID-graph.png'
-    );
-EOF
-done < "$DATA_FILE"
 
 create_table2dp_for fbmklci
 create_table2dp_for cpo
